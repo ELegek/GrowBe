@@ -3,3 +3,52 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+
+// header
+
+.header {
+    padding: 40px 0;
+
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__btn-menu
+
+    &__btn-menu {
+        display: none;
+    }
+}
+
+.menu {
+    margin-left: auto;
+    // .menu__list
+
+    &__list {
+        display: flex;
+
+    }
+
+    // .menu__list-item
+
+    &__list-item {
+        margin-right: 32px;
+    }
+
+    // .menu__list-link
+
+    &__list-link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: $title;
+        transition: all .3s;
+
+        &:hover {
+            color: #F25822;
+        }
+    }
+}

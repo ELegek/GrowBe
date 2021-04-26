@@ -1,11 +1,13 @@
-$title: #363838;
-$default: #5A5A5A;
+$title: #000;
+$default: #888888;
 
 %title-font {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gilroy-bold';
     font-weight: 700;
 }
 
+
+// 2 миксина устраняют ошибку плагина fancybox
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
