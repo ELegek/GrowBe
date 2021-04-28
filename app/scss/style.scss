@@ -116,30 +116,16 @@
 
 
     &__inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-image: url(../images/top__bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 60px 0 103px;
     }
 
     &__content {
-        width: 543px;
+        max-width: 543px;
         margin-right: 80px;
-        position: relative;
-
-        &::after {
-            content: url(../images/top__bg.png);
-            position: absolute;
-            top: -51px;
-            left: -115px;
-            z-index: -1;
-        }
-    }
-
-    &__img {
-        margin-right: -15%;
-        max-width: 843px;
-        height: 580px;
-        object-fit: cover;
     }
 
     &__title {
@@ -156,6 +142,68 @@
         line-height: 23px;
         font-family: 'Gilroy-medium';
         margin-bottom: 37px;
+    }
+
+    &__link {
+        margin-left: 27px;
+        padding-left: 45px;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: 'Gilroy-bold';
+        position: relative;
+
+        &::before {
+            content: url(../images/play__btn.svg);
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// partners
+.partners {
+    padding: 50px 0;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+    }
+}
+
+// solution
+
+.solution {
+    background-color: #FAFAFA;
+    background-image: url(../images/solution__bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 90px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 409px;
+        color: $title;
+        font-size: 45px;
+        line-height: 53px;
+        font-family: 'Gilroy-bold';
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 515px;
+        margin-bottom: 35px;
     }
 }
 
