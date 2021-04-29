@@ -207,6 +207,59 @@
     }
 }
 
+// advantages
+
+.advantages {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__item {
+        width: 370px;
+        height: 290px;
+        padding: 40px 30px;
+        transition: all .2s;
+        border-radius: 10px;
+
+        &:hover {
+            box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+        color: $title;
+        font-family: 'Gilroy-bold';
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        font-size: 11px;
+        line-height: 16px;
+        color: $title;
+        font-family: 'Gilroy-bold';
+        background-color: transparent;
+        border: none;
+    }
+
+
+}
+
 // footer
 .footer {
     background-color: #F3F3F3;
