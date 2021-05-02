@@ -641,6 +641,59 @@
     }
 }
 
+// clients
+.clients {
+    text-align: center;
+    padding: 50px 0;
+
+    &__title {
+        color: $title;
+        @extend %title-font;
+        font-size: 45px;
+        line-height: 53px;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        max-width: 460px;
+        margin: 0 auto 50px auto;
+    }
+
+    &__slider-message,
+    &__post {
+        font-family: 'Gilroy-medium';
+    }
+
+
+    &__slider-item__box {
+        padding: 25px 30px;
+        border: 2px solid #EEEEEE;
+        margin: 0 15px 50px 15px;
+        opacity: .3;
+        transition: all .2s;
+    }
+
+    .slick-slide.slick-current+.clients__slider-item>.clients__slider-item__box {
+        border: none;
+        opacity: 1;
+        box-shadow: 15px 25px 40px -10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+    &__avatar {
+        margin: 0 auto;
+    }
+
+    &__name {
+        color: $title;
+        @extend %title-font;
+        font-size: 13px;
+        line-height: 19px;
+    }
+}
+
 // footer
 .footer {
     background-color: #F3F3F3;
