@@ -9,49 +9,38 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper ">
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="logo">
+          <a href="#" class="header__logo">
+            <img src="images/Logo.png" alt="">
           </a>
-          <button class="header__burger">
-            <span class="menu__btn"></span>
-          </button>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Home</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">About Us</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Services</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Features</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Team</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Blog</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="btn">Get Started</button>
+          <div class="header__menu menu">
+            <div class="header__burger">
+              <span class="header__burger-btn"></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a data-goto='.page__section_1' href="#" class="menu__link">Home</a></li>
+                <li><a data-goto='.page__section_2' href="#" class="menu__link">About Us</a></li>
+                <li><a data-goto='.page__section_3' href="#" class="menu__link">Services</a></li>
+                <li><a data-goto='.page__section_4' href="#" class="menu__link">Features</a></li>
+                <li><a data-goto='.page__section_5' href="#" class="menu__link">Team</a></li>
+                <li><a data-goto='.page__section_6' href="#" class="menu__link">Blog</a></li>
+                <li><a data-goto='.page__section_7' href="#" class="menu__link">Contact</a></li>
+                <li><button class="btn">Get Started</button></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
 
+
     <main class="main">
 
-      <section class="top">
+      <section class="top page__section_1">
         <div class="container">
           <div class="top__inner">
             <div class="top__content">
@@ -84,7 +73,7 @@
         </div>
       </div>
 
-      <section class="solution">
+      <section class="solution page__section_2">
         <div class="container">
           <div class="solution__inner">
             <div class="solution__content">
@@ -102,7 +91,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages page__section_3">
         <div class="container">
           <div class="advantages__inner">
             <a class="advantages__item" href='#'>
@@ -133,7 +122,7 @@
         </div>
       </section>
 
-      <section class="choose">
+      <section class="choose page__section_4">
         <div class="container">
           <h2 class="choose__title">Why You Should Choose Us.</h2>
           <p class="choose__subtitle">
@@ -169,7 +158,7 @@
         </div>
       </section>
 
-      <section class="askwhat">
+      <section class="askwhat page__section_5">
         <div class="container">
           <div class="askwhat__content">
             <h2 class="askwhat__title">You may ask what
@@ -212,7 +201,7 @@
         </div>
       </section>
 
-      <section class="statistics">
+      <section class="statistics page__section_6">
         <div class="container">
           <div class="statistics__inner">
             <ul class="statistics__list">
@@ -603,7 +592,7 @@
           </div>
           <div class="news__slider-item">
             <div class="news__slider-box">
-              <img class="news__slider-img" src="images/news__img1.jpg" alt="images">
+              <img class="news__slider-img" src="images/news__img2.png" alt="images">
               <div class="news__slider-content">
                 <h4 class="news__slider-title">How to become a new digital
                   marketing idea?</h4>
@@ -721,7 +710,7 @@
 
 
     </main>
-    <footer class="footer">
+    <footer class="footer page__section_7">
       <div class="footer__content">
         <div class="container">
           <div class="footer__inner">

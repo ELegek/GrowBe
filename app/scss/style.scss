@@ -4,111 +4,52 @@
 @import 'libs';
 @import 'global';
 
+
 // header
 
+// header
 .header {
-    padding: 40px 0;
-
-    // .header__inner
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(34, 60, 80, 0.2);
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        min-height: 70px;
     }
 
-    // .header__burger
-
-    .header__burger {
-        display: none;
-        width: 30px;
-        height: 30px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        position: relative;
-        z-index: 3;
+    &__logo {
+        z-index: 5;
     }
 
-    .menu__btn {
-        display: block;
-        border: none;
-        border-radius: 5px;
-        width: 30px;
-        height: 5px;
-        background-color: #F25822;
-        cursor: pointer;
-        position: relative;
-        transition: all .2s linear .2s;
-    }
-
-    .menu__btn:before,
-    .menu__btn:after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 5px;
-        border-radius: 5px;
-        background-color: #F25822;
-        position: absolute;
-        left: 0;
-        transition: transform .2s ease-in, top .2s linear .2s;
-    }
-
-    .menu__btn:before {
-        top: -10px;
-    }
-
-    .menu__btn:after {
-        top: 10px;
-    }
-
-    .menu__btn.active {
-        background-color: transparent;
-        transition: all .2s linear;
-    }
-
-    .menu__btn.active:before {
-        transform: rotate(45deg);
-        top: 0;
-        transition: top .2s linear, transform .2s ease-in .2s;
-
-    }
-
-    .menu__btn.active:after {
-        transform: rotate(-45deg);
-        top: 0;
-        transition: top .2s linear, transform .2s ease-in .2s;
-    }
 }
 
+// Menu 
 .menu {
-    margin-left: auto;
-    // .menu__list
-
-    &__list {
-        display: flex;
+    &__list>li {
+        position: relative;
+        margin-left: 20px;
     }
 
-    // .menu__list-item
-
-    &__list-item {
-        margin-right: 32px;
-    }
-
-    // .menu__list-link
-
-    &__list-link {
-        font-weight: 600;
+    &__link {
+        color: #fff;
         font-size: 14px;
         line-height: 16px;
         color: $title;
-        transition: all .3s;
+        font-family: 'Gilroy-semibold';
+        transition: all .2s ease 0s;
 
         &:hover {
-            color: #F25822;
+            color: #F3602D;
         }
     }
+
 }
 
 // Top
@@ -118,6 +59,7 @@
     background-repeat: no-repeat;
     background-position: top right;
     padding: 60px 0 103px;
+    margin-top: 80px;
 
     &__content {
         max-width: 543px;
@@ -732,7 +674,7 @@
         align-items: center;
         text-align: left;
         margin-bottom: 50px;
-        width: 770px;
+        max-width: 770px;
     }
 
     &__slider-content {
@@ -921,3 +863,5 @@
         padding: 19px 0;
     }
 }
+
+@import 'media';
