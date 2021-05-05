@@ -9,4 +9,15 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
     });
+
+    $('.news__slider').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        variableWidth: true,
+    });
+
+
+
+
 });
