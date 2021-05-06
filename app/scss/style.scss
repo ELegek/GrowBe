@@ -120,7 +120,6 @@
     background-image: url(../images/solution__bg.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 90px;
 
     &__inner {
         display: flex;
@@ -148,7 +147,6 @@
 // advantages
 
 .advantages {
-    padding: 100px 0;
 
     &__inner {
         display: flex;
@@ -202,7 +200,6 @@
 
 .choose {
     text-align: center;
-    padding: 100px 0;
     background: #FAFAFA;
 
     &__title {
@@ -232,6 +229,7 @@
         padding-bottom: 50px;
         transition: all .2s;
         border-radius: 10px;
+        margin: 0 10px;
 
         &:hover {
             box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.1);
@@ -264,7 +262,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top left;
-    padding: 50px 0;
 
     &__img {
         width: 55%;
