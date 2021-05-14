@@ -54,12 +54,12 @@
 
 // Top
 .top {
-    background-image: url(../images/top__bg.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
-    padding: 60px 0 103px;
+
     margin-top: 80px;
+
+    &__inner {
+        display: flex;
+    }
 
     &__content {
         max-width: 543px;
@@ -258,18 +258,10 @@
 
 // askwhat 
 .askwhat {
-    background-image: url(../images/askwhat.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top left;
-
-    &__img {
-        width: 55%;
-    }
-
-    &__content {
-        width: 557px;
-        margin-left: auto;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__title {

@@ -55,6 +55,20 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .askwhat__img {
+        display: none;
+    }
+
+    .askwhat__title {
+        text-align: center;
+    }
+
+    .askwhat__subtitle {
+        text-align: center;
+        max-width: 470px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 900px) {
@@ -199,6 +213,15 @@
         color: #000;
     }
 
+    .top__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .top__content {
+        margin-bottom: 20px;
+    }
+
     .top__title {
         font-size: 35px;
         line-height: 40px;
@@ -223,6 +246,24 @@
 
     .partners__items {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .askwhat__subtitle {
+        margin-bottom: 30px;
+    }
+
+    .askwhat__list-img {
+        display: none;
+    }
+
+    .askwhat__list-content {
+        margin: 0;
+
+    }
+
+    .askwhat__list-item {
+        padding: 0;
+        text-align: center;
     }
 }
 
