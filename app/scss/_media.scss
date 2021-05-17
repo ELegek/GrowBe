@@ -2,6 +2,15 @@
     .statistics__item::before {
         display: none;
     }
+
+    .plans__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .plans__item {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -14,6 +23,8 @@
     .choose__item {
         margin-bottom: 20px;
     }
+
+
 }
 
 @media (max-width: 1024px) {
@@ -88,6 +99,14 @@
     .statistics__item {
         width: 50%;
         margin-bottom: 20px;
+    }
+
+    .plans__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .plans__item {
+        padding: 30px 30px;
     }
 }
 
