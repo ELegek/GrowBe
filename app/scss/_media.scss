@@ -340,6 +340,10 @@
         max-width: 320px;
     }
 
+    .speed__text {
+        margin-bottom: 20px;
+    }
+
     .speed__form .btn {
         display: block;
         margin: 15px auto 0px;
@@ -347,6 +351,20 @@
 
     .speed__form input {
         display: block;
+    }
+
+    .speed__url {
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .speed__email {
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        margin: 0;
     }
 }
 
