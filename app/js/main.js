@@ -93,6 +93,28 @@ $(function () {
         dots: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
     $('.news__slider').slick({

@@ -49,6 +49,16 @@
     ._block {
         padding: 50px 0;
     }
+
+    .clients__slider-item.slick-current .clients__slider-item__box {
+        opacity: 1;
+        border: none;
+        box-shadow: 15px 25px 40px -10px rgba(0, 0, 0, 0.1);
+    }
+
+    .clients__slider-item.slick-current.slick-active+.clients__slider-item.slick-active>.clients__slider-item__box {
+        opacity: .3;
+    }
 }
 
 @media (max-width: 990px) {
