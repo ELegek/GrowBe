@@ -88,6 +88,7 @@ if (menuLinks.length > 0) {
 
 $(function () {
 
+
     $('.clients__slider').slick({
         arrows: false,
         dots: true,

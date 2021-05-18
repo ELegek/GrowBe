@@ -156,6 +156,23 @@
     .speed__title {
         white-space: normal;
     }
+
+    .footer__inner {
+        flex-wrap: wrap;
+
+    }
+
+    .footer__social {
+        width: 100%;
+
+        .logo {
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer__menu {
+        width: 185px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -357,6 +374,11 @@
     .plans__list-item {
         font-size: 14px;
         line-height: 23px;
+    }
+
+    .footer__copyright p {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 
