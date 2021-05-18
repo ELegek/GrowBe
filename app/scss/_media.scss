@@ -66,6 +66,7 @@
     ._title {
         font-size: 35px;
         line-height: 40px;
+        margin-bottom: 15px;
     }
 
     .top {
@@ -307,6 +308,14 @@
         line-height: 18px;
         max-width: 400px;
     }
+
+    .news__slider-box .news__slider-img {
+        display: none;
+    }
+
+    .news__slider-content {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -412,6 +421,17 @@
         width: 100%;
         border: none;
         border-radius: 50px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .news__list {
+        flex-wrap: wrap;
+    }
+
+    .news__list-item {
+        width: 100%;
         margin: 0;
     }
 }

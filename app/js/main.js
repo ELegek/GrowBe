@@ -122,6 +122,15 @@ $(function () {
         dots: true,
         centerMode: true,
         variableWidth: true,
+        responsive: [{
+            breakpoint: 780,
+            settings: {
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }, ]
     });
 
 });
